@@ -5,6 +5,9 @@ This task is all about working with binary trees. A Binary Tree is a special dat
 **leaf node**
 Node without child nodes.
 
+**Root Node**
+The topmost node in the tree, no parent node
+
 ## Repo
 git clone https://github.com/karllucas/binary_trees.git
 
@@ -33,6 +36,17 @@ betty 2-binary_tree_insert_right.c; gcc -Wall -Wextra -Werror -pedantic binary_t
 ## 3. Delete
 Write a function that deletes an entire binary tree
 
+betty 2-binary_tree_insert_right.c; gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c tests/2-main.c 2-binary_tree_insert_right.c 0-binary_tree_node.c -o 2-right; ./2-right
+
 ## 4. Is leaf
 Write a function that checks if a node is a leaf
+
+betty 3-binary_tree_delete.c; gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 4-binary_tree_is_leaf.c tests/4-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 4-leaf; ./4-leaf 
+
+## 5. Is root
+Write a function that checks if a given node is a root
+
+5-binary_tree_is_root.c
+
+
 

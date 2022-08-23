@@ -12,11 +12,10 @@ int binary_tree_is_leaf(
 )
 {
 	if (
-		node != NULL /* Check: Mode Not null */
+		node != NULL /* Check: Node Not null prevent segmenation fault */
 		&& node->left == NULL && node->right == NULL /* Check: Child nodes */
 	)
 		return (1);
 
 	return (0);
-
 }
