@@ -8,6 +8,11 @@ Node without child nodes.
 **Root Node**
 The topmost node in the tree, no parent node
 
+## Binary Tree Operations
+### Pre-order traversal
+Root node is visited first, then the left subtree and finally the right subtree.
+
+
 ## Repo
 git clone https://github.com/karllucas/binary_trees.git
 
@@ -54,6 +59,15 @@ betty 5-binary_tree_is_root.c; gcc -Wall -Wextra -Werror -pedantic binary_tree_p
 Write a function that goes through a binary tree using pre-order traversal
 
 6-binary_tree_preorder.c
+
+betty 6-binary_tree_preorder.c ; gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c tests/6-main.c 6-binary_tree_preorder.c 0-binary_tree_node.c -o 6-pre; ./6-pre
+
+
+## 7. In-order traversal
+Write a function that goes through a binary tree using in-order traversal.
+
+7-binary_tree_inorder.c
+
 
 
 
