@@ -1,6 +1,10 @@
 # binary_trees
 This task is all about working with binary trees. A Binary Tree is a special datastructure used for data storage purposes. It has the benefits of both an ordered array and a linked list as search is as quick as in a sorted array and insertion or deletion operation are as fast as in linked list.
 
+
+**leaf node**
+Node without child nodes.
+
 ## Repo
 git clone https://github.com/karllucas/binary_trees.git
 
@@ -29,4 +33,6 @@ betty 2-binary_tree_insert_right.c; gcc -Wall -Wextra -Werror -pedantic binary_t
 ## 3. Delete
 Write a function that deletes an entire binary tree
 
+## 4. Is leaf
+Write a function that checks if a node is a leaf
 
