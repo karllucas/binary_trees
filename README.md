@@ -25,3 +25,8 @@ Write a function that inserts a node as the right-child of another node
 
 
 betty 2-binary_tree_insert_right.c; gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c tests/2-main.c 2-binary_tree_insert_right.c 0-binary_tree_node.c -o 2-right; ./2-right
+
+## 3. Delete
+Write a function that deletes an entire binary tree
+
+
