@@ -12,3 +12,10 @@ Write a function that creates a binary tree node.
 0-binary_tree_node.c
 
 betty 0-binary_tree_node.c; gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c tests/0-main.c 0-binary_tree_node.c -o 0-node; ./0-node
+
+## 1. Insert left
+Write a function that inserts a node as the left-child of another node.
+
+1-binary_tree_insert_left.c
+
+
