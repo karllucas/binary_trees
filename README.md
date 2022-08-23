@@ -48,5 +48,15 @@ Write a function that checks if a given node is a root
 
 5-binary_tree_is_root.c
 
+betty 5-binary_tree_is_root.c; gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 5-binary_tree_is_root.c tests/5-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 5-root; ./5-root
+
+## 6. Pre-order traversal
+Write a function that goes through a binary tree using pre-order traversal
+
+6-binary_tree_preorder.c
+
+
+
+
 
 
