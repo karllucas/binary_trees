@@ -18,17 +18,10 @@ binary_tree_t *binary_tree_insert_left(
 		return (NULL);
 
 	/* Create new node */
-	binary_tree_t *new_node; /* Pointer to binary_tree_t strucut */
-
-	new_node = malloc(sizeof(binary_tree_t)); /* Allocate memory for node*/
+	binary_tree_t *new_node = binary_tree_node(parent, value);
+	
 	if (new_node == NULL)	/* Check: Unsuccessfully memory allocation*/
 		return (NULL);
-
-	/* Assign node values */
-	new_node->n = value;
-	new_node->parent = parent;
-	new_node->left = NULL;
-	new_node->right = NULL;
 
 	/* If there is a left node in parent, make it left child of new_node */
 	if (parent->left != NULL)
