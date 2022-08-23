@@ -18,4 +18,10 @@ Write a function that inserts a node as the left-child of another node.
 
 1-binary_tree_insert_left.c
 
+betty 1-binary_tree_insert_left.c; gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c tests/1-main.c 1-binary_tree_insert_left.c 0-binary_tree_node.c -o 1-left; ./1-left
 
+## 2. Insert right 
+Write a function that inserts a node as the right-child of another node
+
+
+betty 2-binary_tree_insert_right.c; gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c tests/2-main.c 2-binary_tree_insert_right.c 0-binary_tree_node.c -o 2-right; ./2-right
