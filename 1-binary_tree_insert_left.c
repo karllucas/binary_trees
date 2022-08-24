@@ -17,7 +17,7 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 	/* Create new node */
 	new = malloc(sizeof(binary_tree_t));
 	
-	if (new == NULL)	/* Check: Unsuccessfully memory allocation*/
+	if (new == NULL) /* Check: Unsuccessfully memory allocation*/
 		return (NULL);
 
 	/* Fill nodes with their respective values */
