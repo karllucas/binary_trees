@@ -1,7 +1,6 @@
 # binary_trees
 This task is all about working with binary trees. A Binary Tree is a special datastructure used for data storage purposes. It has the benefits of both an ordered array and a linked list as search is as quick as in a sorted array and insertion or deletion operation are as fast as in linked list.
 
-
 **leaf node**
 Node without child nodes.
 
@@ -67,6 +66,8 @@ betty 6-binary_tree_preorder.c ; gcc -Wall -Wextra -Werror -pedantic binary_tree
 Write a function that goes through a binary tree using in-order traversal.
 
 7-binary_tree_inorder.c
+
+10
 
 
 
