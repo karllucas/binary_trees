@@ -76,6 +76,14 @@ Write a function that goes through a binary tree using in-order traversal.
 betty 18-binary_tree_uncle.c; gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c tests/18-main.c 18-binary_tree_uncle.c 0-binary_tree_node.c -o 18-uncle; ./18-uncle
 
 
+## 17. Sibling
+Write a function that finds the sibling of a node
+
+17-binary_tree_sibling.c
+
+betty 17-binary_tree_sibling.c; gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c tests/17-main.c 17-binary_tree_sibling.c 0-binary_tree_node.c -o 17-sibling; ./17-sibling
+
+
 
 
 
