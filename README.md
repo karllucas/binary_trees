@@ -67,8 +67,6 @@ Write a function that goes through a binary tree using in-order traversal.
 
 7-binary_tree_inorder.c
 
-
-
 ## 18. Uncle
 
 18-binary_tree_uncle.c
