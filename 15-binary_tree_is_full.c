@@ -1,53 +1,50 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_is_full - function that checks if a binary tree is full
- *	binary tree
+ * binary_tree_is_leaf - checks if a node is a leaf
  *
- * @tree: pointer to the root node of the tree to check
- *
- * Return: 1 if binary tree is full, otherwise 0
+ * @node: pointer to the node to check
+ * Return: 1 if node is a leaf, otherwise 0
  */
-
-/*
- * Pseudocode
- * 1. Traverse all nodes
- * 2.	Check if both left and right node are leaf
- * 3.   if not
- * 4.		Check if both left and right node have children
- * 5.			Recursive to step 1
- * 6.		If not
- * 7.			tree is not full
- */
-
-int binary_tree_is_full(
-	__attribute__((unused))  const binary_tree_t *tree
-)
+int binary_tree_is_leaf(const binary_tree_t *node)
 {
-	int is_full = 1;
+	int leaf = 0;
 
-	if (tree) /* Check: tree is not NULL */
-	{
-		if (binary_tree_is_leaf(tree))
-		{
-			/* Traverse all nodes */
-			is_full = binary_tree_is_full(tree->left);
-			is_full = binary_tree_is_full(tree->right);
-		}
-		else
-		{
-			if (tree->left && tree->right)
-			{
-				/* Traverse all nodes */
-				is_full = binary_tree_is_full(tree->left);
-				is_full = binary_tree_is_full(tree->right);
-			}
-			else
-			{
-				is_full = 0;
-			}
-		}
-	}
+	if (node && !(node->left) && !(node->right))
+		leaf = 1;
 
-	return (is_full);
+	return (leaf);
+}
+
+/**
+ * binary_tree_is_parent_full - checks if a node is a parent
+ *
+ * @node: pointer to the node to check
+ * Return: 1 if node is a parent, otherwise 0
+ */
+int binary_tree_is_parent_full(const binary_tree_t *node)
+{
+	int parent = 0;
+
+	if (node && node->left && node->right)
+		parent = 1;
+
+	return (parent);
+}
+
+/**
+ * binary_tree_is_full - checks if a binary tree is full
+ *
+ * @tree: tree root
+ * Return: 1 if tree is full, 0 otherwise
+ */
+int binary_tree_is_full(const binary_tree_t *tree)
+{
+	if (binary_tree_is_leaf(tree))
+		return (1);
+
+	if (binary_tree_is_parent_full(tree))
+		return (binary_tree_is_full(tree->left) && binary_tree_is_full(tree->right));
+
+	return (0);
 }
